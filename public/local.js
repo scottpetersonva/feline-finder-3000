@@ -31,7 +31,7 @@ $( document ).ready(function(){
         $.post(currentURL + "/api/friends", newCat, function(data) {
           //Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#cat-match").text(data.name);
-          $("#cat-img").attr("src", data.profilePic);
+          $("#cat-img").attr("src", data.photo);
 
         });
         // materialize modal
