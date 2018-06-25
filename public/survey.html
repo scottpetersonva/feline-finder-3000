@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cat Finder</title>
+  <title>Feline Finder</title>
 
   <!-- Import Google Icon Font -->
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
@@ -14,20 +14,22 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
+<body class="indigo lighten-5">
   <div class="navbar-fixed">
-
+    
     <nav>
-      <div class="nav-wrapper black">
-        <a href="index.html" class="brand-logo center grey-text text-lighten-3">Feline Finder</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-        </ul>
-      </div>
-    </nav>
+        <div class="nav-wrapper black">
+          <a href="/index.html" class="brand-logo center">Feline Finder</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+          </ul>
+        </div>
+      </nav>
 
-
+      
   </div>
 
   <div class="container">
@@ -35,8 +37,15 @@
     <div class="row">
       <div class="col s12 center-align">
         <h1>Find The Right Feline Friend</h1>
+        <h2 class="sub-header-text">Complete the survey below to find similar cats to yours</h2>
       </div>
     </div>
+
+    <!-- <div class="row">
+      <div class="col s12 center-align">
+        <h2 class="sub-header-text">Complete the survey below to find similar cats to yours</h2>
+      </div>
+    </div> -->
 
     <div class="row">
       <div class="input-field col s12">
@@ -54,200 +63,198 @@
 
     <div class="row">
 
-      <div class="input-field col m6 s12">
-        <p>1. How playful is your cat?
-        </p>
-        <select id="q1" class="black-text">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Not playful)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Very playful)</option>
-        </select>
-      </div>
+      <div class="col s6">
 
-      <div class="input-field col m6 s12">
-        <p>2. How much energy does your cat to have?
-        </p>
-        <select id="q2">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Low Energy)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (High Energy)</option>
-        </select>
-      </div>
-
-      <div class="input-field col m6 s12">
-        <p>3. Preference for indoor vs. outdoor?
-        </p>
-        <select id="q3">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Indoor)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Outdoor)</option>
-        </select>
-      </div>
-
-      <div class="input-field col m6 s12">
-        <p>4. Is your cat good with other cats?
-        </p>
-        <select id="q4">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Not Important)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Very Important)</option>
-        </select>
-      </div>
-
-      <div class="input-field col m6 s12">
-        <p>5. Is your cat good with dogs?
-        </p>
-        <select id="q5">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Not Important)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Very Important)</option>
-        </select>
-      </div>
-
-      <div class="input-field col m6 s12">
-        <p>6. is your cat young or old?
-        </p>
-        <select id="q6">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Very Young)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Very Old)</option>
-        </select>
-      </div>
-
-      <div class="input-field col m6 s12">
-        <p>7. Is your cat independent cat or does he/she shadow you?
-        </p>
-        <select id="q7">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Independent)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Shadow)</option>
-        </select>
-      </div>
-
-      <div class="input-field col m6 s12">
-        <p>8. How much does your cat talk?
-        </p>
-        <select id="q8">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Not Much)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (A Lot)</option>
-        </select>
-      </div>
-
-      <div class="input-field col m6 s12">
-        <p>9. Is your cat big or small?
-        </p>
-        <select id="q9">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Small)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Big)</option>
-        </select>
-      </div>
-
-      <div class="input-field col m6 s12">
-        <p>10. What kind of purr does your cat have??
-        </p>
-        <select id="q10">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">1 (Soft)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Strong)</option>
-        </select>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="row">
-    <div class="col s12 right-align">
-      <button id="submit-survey" data-target="modal1" class="btn waves-effect waves-light modal-trigger light-green accent-4" type="submit"
-        name="action">Submit
-        <i class="material-icons right">send</i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content white">
-      <h4 class="black-text">Meet Your Cat Match!</h4>
-      <h5 id="cat-match" class="black-text"></h5>
-      <img id="cat-img" src="" alt="No Image" width=2 00px>
-    </div>
-    <div class="modal-footer black">
-      <a href="/survey" class="modal-action modal-close waves-effect waves-gray btn-flat light-green accent-4 white-text">Done</a>
-    </div>
-  </div>
-
-  </div>
-
-
-  <footer class="page-footer black hoverable">
-    <div class="container">
-      <div class="row">
-
-        <div class="col s12 right-align">
-          <h5 class="grey-text text-lighten-3 bottom-links-header">LINKS</h5>
-          <ul>
-            <li>
-              <a class="grey-text text-lighten-3 bottom-links" href="/api/friends">API Friends List</a>
-            </li>
-            <li>
-              <a class="grey-text text-lighten-3 bottom-links" href="https://github.com/scottpetersonva/cat-finder">GitHub Repo</a>
-            </li>
-            <li>
-              <a class="grey-text text-lighten-3 bottom-links" href="home.html">Home</a>
-            </li>
-          </ul>
+        <div class="input-field col s12">
+          <p>1. How playful do you want your cat to be?
+            </p>
+          <select id="q1">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Not playful)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very playful)</option>
+          </select>
         </div>
+
+        <div class="input-field col s12">
+          <p>2. How much energy do you want your cat to have?
+            </p>
+          <select id="q2">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Low Energy)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (High Energy)</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <p>3. Preference for indoor vs. outdoor?
+            </p>
+          <select id="q3">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Indoor)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Outdoor)</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <p>4. Do you want your cat to be good with other cats?
+            </p>
+          <select id="q4">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Not Important)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Important)</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <p>5. Do you want your cat to be good with dogs?
+            </p>
+          <select id="q5">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Not Important)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Important)</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="col s6">
+
+        <div class="input-field col s12">
+          <p>6. Do you want a young cat or an older cat?
+            </p>
+          <select id="q6">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Very Young)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Old)</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <p>7. Do you want an independent cat or one who shadows you?
+            </p>
+          <select id="q7">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Independent)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Shadow)</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <p>8. How much do you want your cat to talk
+            </p>
+          <select id="q8">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Not Much)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (A Lot)</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <p>9. Big cat or small cat?
+            </p>
+          <select id="q9">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Small)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Big)</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <p>10. What kind of purr do you prefer?
+            </p>
+          <select id="q10">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Soft)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strong)</option>
+          </select>
+          
+        </div>
+
+      </div>
+      
+    </div>  
+    
+  
+         
+    <div class="row">
+      <div class="col s12 right-align">
+        <button id="submit-survey" data-target="modal1" class="btn waves-effect waves-light modal-trigger light-green accent-4" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
       </div>
     </div>
-  </footer>
+
+          <!-- Modal Structure -->
+    <div id="modal1" class="modal white">
+      <div class="modal-content center-align">
+        <h4 class="black-text">Meet Your Cat Match!</h4>
+        
+        <img class="" id="cat-img" src="" alt="No Image" width = 200px>
+        <h5 class="black-text" id="cat-match"></h5>
+      </div>
+    <div class="modal-footer black">
+      <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat light-green accent-4 grey-text text-lighten-3">Done</a>
+    </div>
+   </div>
+
+  </div>
+  
+
+    <footer class="page-footer black hoverable">
+        <div class="container">
+            <div class="row">
+
+              <div class="col s12 right-align">
+                <h5 class="grey-text text-lighten-3 bottom-links-header">LINKS</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3 bottom-links" href="/api/friends">API Friends List</a></li>
+                  <li><a class="grey-text text-lighten-3 bottom-links" href="https://github.com/scottpetersonva/cat-finder">GitHub Repo</a></li>
+                  <li><a class="grey-text text-lighten-3 bottom-links" href="home.html">Home</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </footer>
 
 
+        
+      <!-- Minified jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-  <!-- Minified jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
-  <!-- Local JS file -->
-  <script src="local.js"></script>
+<!-- Local JS file -->
+<script src="local.js"></script>
 </body>
-
 </html>

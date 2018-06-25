@@ -10,7 +10,7 @@ $( document ).ready(function(){
       event.preventDefault();
       var newCat = {
         name: $('#name').val().trim(),
-        profilePic: $('#image-link').val().trim(),
+        photo: $('#image-link').val().trim(),
         scores: [
           $('#q1').val(),
           $('#q2').val(),
