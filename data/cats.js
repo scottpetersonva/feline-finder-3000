@@ -2,7 +2,7 @@
 
 // ```json
 
-var friendsArray = [
+var catList = [
   {
     name: "Murray",
     photo: "images/murray.jpg",
@@ -16,4 +16,4 @@ var friendsArray = [
   }
 ];
 
-module.exports = friendsArray;
+module.exports = catList;

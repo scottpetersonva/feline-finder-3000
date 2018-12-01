@@ -28,7 +28,7 @@ $( document ).ready(function(){
       var currentURL = window.location.origin;
 
         //AJAX posts the cats to friends API.
-        $.post(currentURL + "/api/friends", newCat, function(data) {
+        $.post(currentURL + "/api/cats", newCat, function(data) {
           //Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#cat-match").text(data.name);
           $("#cat-img").attr("src", data.photo);
@@ -42,6 +42,5 @@ $( document ).ready(function(){
 
   })
       
-});
-
+})
   
